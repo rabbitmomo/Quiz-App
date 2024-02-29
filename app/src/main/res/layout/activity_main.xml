@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundwood">
+
+
+    <TextView
+        android:id="@+id/totalQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:text="Markah"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@id/submit_btn"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="@color/gray"
+            android:text="ANS A"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ans_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="@color/gray"
+            android:text="ANS B"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ans_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="@color/gray"
+            android:text="ANS C"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ans_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:backgroundTint="@color/gray"
+            android:text="ANS D"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalQuestion"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/whitewall"
+        android:text="This will be the question"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="serif"
+        android:text="Hantar"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="30sp"
+        android:layout_marginLeft="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"/>
+
+    <ImageButton
+        android:id="@+id/stop_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/baseline_pause_24"
+        android:layout_marginLeft="320sp"
+        android:background="@color/transparent"/>
+
+    <ImageButton
+        android:id="@+id/start_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        android:layout_marginLeft="320sp"
+        android:background="@color/transparent"
+    />
+
+    <ImageView
+        android:id="@+id/stopping_symbol"
+        android:layout_width="200sp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/baseline_school_24" />
+
+</RelativeLayout>
